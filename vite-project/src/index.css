@@ -4,3 +4,20 @@
   box-sizing: border-box;
 }
 
+/*:root{*/
+/*  filter: invert(100%);*/
+/*}*/
+
+/*img:not([src*='.svg']), video {*/
+/*  filter: invert(100%);*/
+/*}*/
+
+
+
+/*main, ::after, ::before*/
+/*{*/
+/*  background-image: url("assets/back_fone.jpg");*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: cover;*/
+/*}*/
+
