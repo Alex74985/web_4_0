@@ -1,0 +1,16 @@
+.base {
+    display: flex;
+    text-align: center;
+    color: #fff;
+    height: 64px;
+    padding-inline: 50px;
+    line-height: 64px;
+    background-color: #7dbcea;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all ease .3s;
+}
+
+.dark{
+    background-color: #001529;
+}

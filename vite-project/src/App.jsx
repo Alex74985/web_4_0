@@ -13,19 +13,10 @@ import Card from "./components/Card/Card.jsx";
 import {properties} from "./components/Card/card.config.js";
 const { Header, Footer, Content } = Layout;
 import styles from "./components/Card/content.module.css"
+import style from './components/header/header.module.css';
+import {useContext} from "react";
+import {ThemeContext} from "./ContextProvider.jsx";
 
-const headerStyle = {
-    display: 'flex',
-    textAlign: 'center',
-    color: '#fff',
-    height: 64,
-    paddingInline: 50,
-    lineHeight: '64px',
-    backgroundColor: '#7dbcea',
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-
-};
 const contentStyle = {
     textAlign: 'center',
     minHeight: 750,
@@ -59,6 +50,9 @@ function getItem(label, key, icon, children, type) {
 
 function App() {
 
+    const theme = useContext(ThemeContext);
+    const darkmode = theme.state.darkMode;
+
     return (
       <Space
           direction="vertical"
@@ -68,7 +62,7 @@ function App() {
           }}
       >
           <Layout>
-              <Header style={headerStyle}>
+              <Header className={`${style.base} ${darkmode && style.dark}`}>
                   <div style={{display: 'flex', alignItems: 'center', gap: '4rem'}}>
                       <Search
                           placeholder={"Search"}

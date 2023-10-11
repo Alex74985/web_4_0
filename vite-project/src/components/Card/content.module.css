@@ -1,3 +1,12 @@
 .content {
     width: 1440px;
 }
+
+.base {
+    width: 240px;
+    transition: all ease .3s;
+}
+
+.dark {
+    background-color: #1677ff;
+}
