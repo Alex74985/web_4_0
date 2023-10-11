@@ -1,0 +1,17 @@
+import Card from "../card/Card.jsx";
+import {properties} from "./card.config.js";
+import styles from './main.module.css';
+
+const Main = () => {
+    return (
+        <main className={styles.main}>
+            <section className={styles.cards__list}>
+                <div className={styles.cards}>
+                    {properties.map((item, i) => <Card title={item.title} desc={item.description} image={item.image} key={i}/>)}
+                </div>
+            </section>
+        </main>
+    );
+}
+
+export default Main;
