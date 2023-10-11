@@ -2,7 +2,7 @@ import {Card as C} from "antd";
 import Meta from "antd/es/card/Meta.js";
 import {useContext, useState} from "react";
 import {ThemeContext} from "../../ContextProvider.jsx";
-import style from './content.module.css';
+import style from './card.module.css';
 
 
 const Card = ({desc, title, image, index}) => {

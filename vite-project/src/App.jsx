@@ -12,7 +12,7 @@ import Switch from "./components/Switch.jsx";
 import Card from "./components/Card/Card.jsx";
 import {properties} from "./components/Card/card.config.js";
 const { Header, Footer, Content } = Layout;
-import styles from "./components/Card/content.module.css"
+import styles from "./components/Card/card.module.css"
 import style from './components/header/header.module.css';
 import {useContext} from "react";
 import {ThemeContext} from "./ContextProvider.jsx";
