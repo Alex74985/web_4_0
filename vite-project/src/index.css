@@ -4,20 +4,31 @@
   box-sizing: border-box;
 }
 
-/*:root{*/
-/*  filter: invert(100%);*/
-/*}*/
+ul, li {
+  list-style-type: none;
+}
 
-/*img:not([src*='.svg']), video {*/
-/*  filter: invert(100%);*/
-/*}*/
+:root {
+  font-size: 14px;
+  font-family: sans-serif;
 
+  --header-height: 4rem;
+  --footer-height: 6rem;
 
+  --body-background: white;
+  --body-color: black;
+  --header-bg-color: #7dbcea;
+  --footer-bg-color: #7dbcea;
+  --card-bg-color: white;
+  --card-color: black;
+}
 
-/*main, ::after, ::before*/
-/*{*/
-/*  background-image: url("assets/back_fone.jpg");*/
-/*  background-repeat: no-repeat;*/
-/*  background-size: cover;*/
-/*}*/
+[data-theme='dark'] {
+  --body-background: #282c34;
+  --body-color: white;
+  --header-bg-color: rgb(0,21,41);
+  --footer-bg-color: rgb(0,21,41);
+  --card-bg-color: rgb(0,21,41);
+  --card-color: white;
+}
 

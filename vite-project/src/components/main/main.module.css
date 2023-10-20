@@ -1,0 +1,17 @@
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: calc(100vh - var(--footer-height) - var(--header-height));
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.cards__list {
+    margin: 4rem 0;
+}
