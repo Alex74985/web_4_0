@@ -1,0 +1,13 @@
+.slider{
+    height: calc(100vh - var( --header-height));
+    color: #fff;
+    line-height: 100vh;
+    text-align: center;
+    background: #364d79;
+    /*margin-bottom: 4rem;*/
+}
+.wrapper{
+    position: absolute;
+    inset: 0;
+    top: var( --header-height);
+}

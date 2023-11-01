@@ -1,5 +1,5 @@
 .main {
-    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     min-height: calc(100vh - var(--footer-height) - var(--header-height));
 }
@@ -13,5 +13,10 @@
 }
 
 .cards__list {
-    margin: 4rem 0;
+    margin: 8rem 0 4rem 0;
+}
+
+.slider_s {
+    position: relative;
+    margin-bottom: 4rem;
 }
