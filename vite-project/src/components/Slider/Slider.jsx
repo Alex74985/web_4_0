@@ -1,21 +1,15 @@
 import { Carousel } from 'antd';
 import style from "./slider.module.css";
+import {properties} from "../main/slider.config.js";
+import Slide from "./Slide.jsx";
 
 const Slider = () => {
     return (
-        <Carousel dots={true} className={style.wrapper}>
-            <div>
-                <h3 className={style.slider}>1</h3>
-            </div>
-            <div>
-                <h3 className={style.slider}>2</h3>
-            </div>
-            <div>
-                <h3 className={style.slider}>3</h3>
-            </div>
-            <div>
-                <h3 className={style.slider}>4</h3>
-            </div>
+        <Carousel
+            dots={true}
+            className={style.wrapper}
+            autoplay>
+            {properties.map((item, i) => <Slide image={item.image} key={i}/>)}
         </Carousel>
     );
 };

@@ -17,10 +17,10 @@ ul, li {
 
   --body-background: white;
   --body-color: black;
-  --header-bg-color: #2c8fa4;
-  --footer-bg-color: #7dbcea;
+  --header-bg-color: #d12500;
+  --footer-bg-color: #2c8fa4;
   --card-bg-color: white;
-  --card-color: black;
+  --card-color: #126338;
 }
 
 [data-theme='dark'] {

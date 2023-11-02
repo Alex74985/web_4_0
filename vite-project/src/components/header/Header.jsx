@@ -17,7 +17,7 @@ const Header = () => {
             <div className={styles.inner__header}>
                 <Nav items={['Главная']}/>
                 <div className={styles.features}>
-                    <Search className={styles.search} placeholder="input search text" enterButton />
+                    <Search className={styles.search} placeholder="input search text" enterButton/>
                     <Switch className={`${checked && styles.switch}`} onChange={() => setCheck(!checked)}/>
                 </div>
             </div>
